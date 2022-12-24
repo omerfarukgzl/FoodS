@@ -1,4 +1,4 @@
-package com.example.foodapp
+package com.omtaem.foodapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
