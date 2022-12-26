@@ -15,8 +15,10 @@ import com.omtaem.foodapp.domain.presentation.data.local.entity.FavoritesEntity
 import dagger.hilt.android.AndroidEntryPoint
 import org.jsoup.Jsoup
 
+
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
+
 
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
