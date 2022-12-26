@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
+import com.omtaem.foodapp.databinding.FragmentFavoriteFoodsBinding
 import com.omtaem.foodapp.domain.presentation.favorite.adapter.FavoriteFoodsAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.text.Typography.dagger

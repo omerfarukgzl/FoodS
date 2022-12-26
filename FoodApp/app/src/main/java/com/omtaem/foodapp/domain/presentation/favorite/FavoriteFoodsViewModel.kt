@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.omtaem.foodapp.data.local.entity.FavoritesEntity
+import com.omtaem.foodapp.domain.presentation.data.local.entity.FavoritesEntity
 import com.omtaem.foodapp.domain.presentation.domain.FavoriteRecipeRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel

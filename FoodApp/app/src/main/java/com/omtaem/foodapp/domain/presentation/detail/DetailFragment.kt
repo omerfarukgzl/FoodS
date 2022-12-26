@@ -10,18 +10,17 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import coil.load
 import com.omtaem.foodapp.R
-import com.omtaem.foodapp.data.local.entity.FavoritesEntity
 import com.omtaem.foodapp.databinding.FragmentDetailBinding
+import com.omtaem.foodapp.domain.presentation.data.local.entity.FavoritesEntity
 import dagger.hilt.android.AndroidEntryPoint
 import org.jsoup.Jsoup
+
 
 @AndroidEntryPoint
 class DetailFragment : Fragment() {
 
-    private var _binding: FragmentDetailBinding? = null
 
-    // This property is only valid between onCreateView and
-// onDestroyView.
+    private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
 
     private val navigationArgs: DetailFragmentArgs by navArgs()

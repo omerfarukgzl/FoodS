@@ -7,7 +7,7 @@
 
         <variable
             name="result"
-            type="com.omtaem.foodapp.data.network.model.Result" />
+            type="com.omtaem.foodapp.domain.presentation.data.network.model.Result" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

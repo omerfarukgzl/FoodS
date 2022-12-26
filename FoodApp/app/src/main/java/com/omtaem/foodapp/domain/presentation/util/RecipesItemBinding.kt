@@ -1,6 +1,8 @@
 package com.omtaem.foodapp.domain.presentation.util
 
 import android.widget.ImageView
+import androidx.databinding.BindingAdapter
+import coil.load
 import com.omtaem.foodapp.R
 
 @BindingAdapter("loadImageFromUrl")

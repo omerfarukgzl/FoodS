@@ -9,6 +9,7 @@ import coil.load
 import com.omtaem.foodapp.R
 import com.omtaem.foodapp.data.local.entity.FavoritesEntity
 import com.omtaem.foodapp.databinding.ItemFavoriteFoodBinding
+import com.omtaem.foodapp.domain.presentation.data.local.entity.FavoritesEntity
 
 class FavoriteFoodsAdapter(
 

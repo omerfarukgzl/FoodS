@@ -4,12 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.omtaem.foodapp.data.network.model.FoodRecipe
-import com.omtaem.foodapp.domain.FoodRecipeRepository
-import com.omtaem.foodapp.util.Constants
-import com.omtaem.foodapp.util.Constants.DEFAULT_DIET_TYPE
-import com.omtaem.foodapp.util.Constants.DEFAULT_MEAL_TYPE
-import com.omtaem.foodapp.util.NetworkResult
+import com.omtaem.foodapp.domain.presentation.data.network.model.FoodRecipe
+import com.omtaem.foodapp.domain.presentation.domain.FoodRecipeRepository
+import com.omtaem.foodapp.domain.presentation.util.Contants
+import com.omtaem.foodapp.domain.presentation.util.Contants.DEFAULT_DIET_TYPE
+import com.omtaem.foodapp.domain.presentation.util.Contants.DEFAULT_MEAL_TYPE
+import com.omtaem.foodapp.domain.presentation.util.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -29,12 +29,12 @@ class HomeViewModel @Inject constructor(
     fun applyQueries(): HashMap<String, String> {
         val queries: HashMap<String, String> = HashMap()
 
-        queries[Constants.QUERY_NUMBER] = Constants.DEFAULT_RECIPES_NUMBER
-        queries[Constants.QUERY_API_KEY] = Constants.API_KEY
-        queries[Constants.QUERY_TYPE] = DEFAULT_MEAL_TYPE
-        queries[Constants.QUERY_DIET] = DEFAULT_DIET_TYPE
-        queries[Constants.QUERY_ADD_RECIPE_INFORMATION] = "true"
-        queries[Constants.QUERY_FILL_INGREDIENTS] = "true"
+        queries[Contants.QUERY_NUMBER] = Contants.DEFAULT_RECIPES_NUMBER
+        queries[Contants.QUERY_API_KEY] = Contants.API_KEY
+        queries[Contants.QUERY_TYPE] = DEFAULT_MEAL_TYPE
+        queries[Contants.QUERY_DIET] = DEFAULT_DIET_TYPE
+        queries[Contants.QUERY_ADD_RECIPE_INFORMATION] = "true"
+        queries[Contants.QUERY_FILL_INGREDIENTS] = "true"
 
         return queries
     }
