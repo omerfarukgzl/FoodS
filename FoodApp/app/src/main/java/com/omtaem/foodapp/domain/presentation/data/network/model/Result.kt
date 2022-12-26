@@ -1,5 +1,10 @@
 package com.omtaem.foodapp.domain.presentation.data.network.model
 
+import android.os.Parcelable
+import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
+import kotlinx.android.parcel.RawValue
+
 @Parcelize
 data class Result(
     @SerializedName("aggregateLikes")

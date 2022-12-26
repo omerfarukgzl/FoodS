@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.omtaem.foodapp.data.network.model.FoodRecipe
-import com.omtaem.foodapp.data.network.model.Result
 import com.omtaem.foodapp.databinding.ItemFoodBinding
-import com.omtaem.foodapp.util.RecipesDiffUtil
+import com.omtaem.foodapp.domain.presentation.data.network.model.FoodRecipe
+import com.omtaem.foodapp.domain.presentation.util.RecipesDiffUtil
+
 
 class HomeRecyclerAdapter(private val onFoodClick: ((result: Result) -> Unit)?) : RecyclerView.Adapter<HomeRecyclerAdapter.MyViewHolder>() {
 

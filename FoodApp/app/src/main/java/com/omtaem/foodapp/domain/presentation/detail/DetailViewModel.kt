@@ -9,6 +9,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 import com.omtaem.foodapp.data.network.model.Result
+import com.omtaem.foodapp.domain.presentation.data.local.entity.FavoritesEntity
+import com.omtaem.foodapp.domain.presentation.domain.FavoriteRecipeRepository
 
 @HiltViewModel
 class DetailViewModel @Inject constructor(

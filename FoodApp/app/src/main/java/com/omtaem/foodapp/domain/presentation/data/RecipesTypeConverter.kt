@@ -1,5 +1,9 @@
 package com.omtaem.foodapp.domain.presentation.data
 
+import androidx.room.TypeConverter
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+
 
 class RecipesTypeConverter {
     var gson = Gson()

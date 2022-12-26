@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 import kotlin.time.DurationUnit
 
+
 @Module
 @InstallIn(SingletonComponent::class)
 object NetworkModule {

@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.omtaem.foodapp.R
+import com.omtaem.foodapp.domain.presentation.util.NetworkResult
 
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
@@ -120,7 +121,7 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    private fun onFoodClick(result: com.omtaem.foodapp.data.network.model.Result) {
+    private fun onFoodClick(result: com.omtaem.foodapp.domain.presentation.data.network.model.Result) {
         val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(result)
         findNavController().navigate(action)
     }
